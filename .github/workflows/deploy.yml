@@ -17,6 +17,8 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '8'
+          distribution: 'adopt'
+          java-package: jdk
       - name: Build with Ant
         run: |
           export GWT_TOOLS=$(pwd)/gwt-tools
