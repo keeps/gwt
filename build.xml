@@ -98,11 +98,11 @@
     <gwt.ant dir="doc"/>
   </target>
 
-  <target name="samples" description="[subdir] Builds (or runs ${target} if set) the samples">
+  <!-- <target name="samples" description="[subdir] Builds (or runs ${target} if set) the samples">
     <call-subproject subproject="user" subtarget="build"/>
     <call-subproject subproject="codeserver" subtarget="build"/>
     <gwt.ant dir="samples"/>
-  </target>
+  </target> -->
 
   <target name="buildtools" description="[subdir] Build (or runs ${target} if set) the build tools">
     <gwt.ant dir="build_tools"/>
@@ -116,7 +116,7 @@
     <call-subproject subproject="requestfactory" subtarget="build"/>
     <call-subproject subproject="servlet" subtarget="build"/>
     <call-subproject subproject="tools" subtarget="build"/>
-    <call-subproject subproject="samples" subtarget="build"/>
+    <!-- <call-subproject subproject="samples" subtarget="build"/> -->
   </target>
 
   <target name="checkstyle" description="[action] Does static analysis of GWT source">
