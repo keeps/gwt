@@ -26,5 +26,6 @@ jobs:
       - name: Deploy to GitHub packages
         run: maven/push-gwt.sh
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GWT_MAVEN_REPO_ID: github
           GWT_MAVEN_REPO_URL: https://maven.pkg.github.com/keeps/gwt
