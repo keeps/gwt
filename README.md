@@ -1,3 +1,8 @@
+## GWT fork for Jetty 9.4
+
+This fork upgrades GWT's embedded Jetty to 9.4 and deploys packages to:
+https://github.com/orgs/keeps/packages?repo_name=gwt
+
 ## GWT
 
   [![nightly](https://img.shields.io/jenkins/s/http/build.gwtproject.org/gwt.svg?label=nightly)](http://build.gwtproject.org/job/gwt/)
