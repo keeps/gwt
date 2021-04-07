@@ -64,11 +64,9 @@ fi
 #read -p"GPG passphrase for jar signing (may skip for local deployment): " gpgPassphrase
 gpgPassphrase=${gpgPassphrase:=$GWT_GPG_PASS}
 
-echo $gwtVersion $gwtPath $repoUrl $repoId
+maven-gwt "$gwtVersion" \
+          "$gwtPath" \
+          "$repoUrl" \
+          "$repoId"
 
-#maven-gwt "$gwtVersion" \
-#          "$gwtPath" \
-#          "$repoUrl" \
-#          "$repoId"
-
-#popd >/dev/null 2>&1
+popd >/dev/null 2>&1
